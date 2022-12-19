@@ -256,4 +256,10 @@ stage('Plot Code Coverage Report') {
 }
 }
 
- [Jenkinsfile Documentation](https://www.jenkins.io/doc/book/pipeline/jenkinsfile/)
+![Jenkinsfile Documentation](https://www.jenkins.io/doc/book/pipeline/jenkinsfile/)
+
+![Install Pip](https://bigchaindb.readthedocs.io/projects/server/en/v0.6.0/appendices/install-latest-pip.html)
+
+![Install Pyycopg2](https://stackoverflow.com/questions/11583714/install-psycopg2-on-ubuntu)
+
+

@@ -113,4 +113,77 @@ To really appreciate and feel the difference of Cloud Blue UI, it is recommended
 
 - Currently we only have the Build stage. Let us add another stage called Test. Paste the code snippet below and push the new changes to GitHub
 
-![Branch Output](./images/branch-output.PNG)
+- To make your new branch show up in Jenkins, we need to tell Jenkins to scan the repository.
+
+- Click on the "Administration" button
+
+- Navigate to the Ansible project and click on "Scan repository now"
+
+- Refresh the page and both branches will start building automatically. You can go into Blue Ocean and see both branches there too.
+
+![New Branch](./images/new-branch.PNG)
+
+![Jenkins File](./images/Jenkinsf-build-test.PNG)
+
+- In GitHub, create a pull and merge, navigate to Jenkins Blueocean and confirm the GitHub actions:
+
+ ![Jenkins File](./images/blueo-main-update1.PNG)
+
+ - A QUICK TASK FOR YOU!
+
+ 1. Create a pull request to merge the latest code into the main branch.
+
+2. After merging the PR, go back into your terminal and switch into the main branch.
+
+3. Pull the latest change.
+
+4. Create a new branch, add more stages into the Jenkins file to simulate below phases. (Just add an echo command like we have in build and test stages)
+   1. Package 
+   2. Deploy 
+   3. Clean up
+5. Verify in Blue Ocean that all the stages are working, then merge your feature branch to the main branch
+
+6. Eventually, your main branch should have a successful pipeline like this in blue ocean
+
+Display Jenkins worksapce:
+
+`ls -l /var/lib/jenkins/workspace/`
+
+![Jenkins File](./images/jenkins-workspace.PNG)
+
+![Quick Task](./images/quick-task.PNG)
+
+![Main Output](./images/blueo-main-latest.PNG)
+
+- Clean up output:
+
+![Main Output](./images/cleanup-output.PNG)
+
+### RUNNING ANSIBLE PLAYBOOK FROM JENKINS
+
+Now that you have a broad overview of a typical Jenkins pipeline. Let us get the actual Ansible deployment to work by:
+
+1. Installing Ansible on Jenkins
+
+![Ansible Install](./images/ansible-success.PNG)
+
+![Ansible Version](./images/ansible-version.PNG)
+
+- Install Dependencies:
+
+`sudo apt-get install python3-pip`
+
+`python3 -m pip install --upgrade setuptools`
+
+`python3 -m pip install --upgrade pip`
+
+`python3 -m pip install PyMySQL`
+
+`python3 -m pip install mysql-connector-python`
+
+![Dependency Installation](./images/depend-install-5.PNG)
+
+`python3 -m pip install psycopg2==2.7.5 --ignore-installed`
+
+![Dependency Installation](./images/depend-install-6.PNG)
+
