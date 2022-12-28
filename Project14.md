@@ -1,5 +1,5 @@
-# EXPERIENCE CONTINUOUS INTEGRATION WITH JENKINS | ANSIBLE | ARTIFACTORY | SONARQUBE | PHP
 
+<<<<<<< HEAD
 ## PREREQUISITES
 
 - Links to documentation to study:
@@ -218,3 +218,6 @@ Jenkins needs to export the ANSIBLE_CONFIG environment variable. You can put the
 
 ![Ansible Cfg file](./images/prepare-ansible-execution.PNG)
 
+=======
+![Ansible Cfg file](./images/prepare-ansible-execution.PNG)
+>>>>>>> 13ed5dd78ee53ae455802734e60668df5ccd04e6
