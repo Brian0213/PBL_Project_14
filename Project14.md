@@ -213,3 +213,8 @@ Jenkins needs to export the ANSIBLE_CONFIG environment variable. You can put the
 ![Ansible Cfg file](./images/ansible-cfg-1.PNG)
 
 ![Ansible Cfg file](./images/ansible-cfg-2.PNG)
+
+- Run ansible on jenkins:
+
+![Ansible Cfg file](./images/prepare-ansible-execution.PNG)
+
